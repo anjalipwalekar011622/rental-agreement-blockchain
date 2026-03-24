@@ -4,7 +4,7 @@ A full-stack blockchain-powered web application that auto-generates rental agree
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Traditional rental agreements are paper-based, easily forged, and lack transparency. This system addresses these problems by:
 
@@ -18,13 +18,13 @@ Traditional rental agreements are paper-based, easily forged, and lack transpare
 
 ---
 
-## 🔍 Research Gap Addressed
+##  Research Gap Addressed
 
 While existing works focus on full-fledged decentralized rental ecosystems, there is limited implementation of **lightweight, automated agreement integrity verification** mechanisms suitable for real-world adoption. This project addresses this gap by proposing a blockchain-based auto-generated rental agreement system with tamper-detection capability, role-based access control, and secure user authentication.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -41,7 +41,7 @@ While existing works focus on full-fledged decentralized rental ecosystems, ther
 
 ---
 
-## 👥 User Roles
+##  User Roles
 
 | Feature | Landlord | Tenant |
 |---------|----------|--------|
@@ -54,7 +54,7 @@ While existing works focus on full-fledged decentralized rental ecosystems, ther
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 rental-agreement-blockchain/
 │
@@ -89,7 +89,7 @@ rental-agreement-blockchain/
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -130,15 +130,15 @@ http://127.0.0.1:5000
 
 ---
 
-## 🔑 Key Features
+##  Key Features
 
-### 👤 Authentication System
+###  Authentication System
 - Register as Landlord or Tenant
 - Passwords stored as bcrypt hash (never plain text)
 - Session-based login with Flask-Login
 - Role-based access control on all pages
 
-### 📄 Agreement Generation (Landlord Only)
+###  Agreement Generation (Landlord Only)
 - Enter tenant's registered email address
 - System verifies tenant exists in database
 - If tenant not found → error shown, asks them to register
@@ -147,13 +147,13 @@ http://127.0.0.1:5000
 - Stores hash permanently on Ethereum blockchain
 - Agreement linked to both landlord and tenant accounts
 
-### 📊 Dashboard
+###  Dashboard
 - Landlords see all agreements they created
 - Tenants see all agreements shared with them
 - Download PDF anytime
 - Blockchain Agreement ID shown for every record
 
-### 🔍 Tamper Detection
+###  Tamper Detection
 - Upload any agreement PDF
 - Enter its Agreement ID
 - System recomputes hash and compares with blockchain
@@ -161,7 +161,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🗄️ Database Structure
+##  Database Structure
 
 ### Users Table
 | Column | Type | Description |
@@ -189,7 +189,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📊 How It Works
+##  How It Works
 ```
 Tenant registers → account saved in database
         ↓
@@ -212,7 +212,7 @@ Anyone can verify document authenticity anytime
 
 ---
 
-## 📚 Literature Review Mapping
+##  Literature Review Mapping
 
 | Paper | Our Contribution |
 |-------|-----------------|
@@ -224,7 +224,7 @@ Anyone can verify document authenticity anytime
 
 ---
 
-## 👩‍💻 Developed By
+##  Developed By
 
 - **Name:** Anjali Prashant Walekar, Anushree Verma, Allison Suvarna, Srushti Thakur
 - **Project Type:** Academic PoC (Proof of Concept)
